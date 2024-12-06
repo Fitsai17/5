@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles.css">
+    <title>User and Product Management</title>
+</head>
+<body>
+    <h1>Manage Users and Products</h1>
+
+    <div>
+        <h2>Add User</h2>
+        <form id="userForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Add User</button>
+        </form>
+        <ul id="userList"></ul>
+    </div>
+
+    <div>
+        <h2>Available Products</h2>
+        <ul id="productList"></ul>
+        <button id="refreshProducts">Refresh Products</button>
+    </div>
+
+    <div>
+        <h2>Add Product</h2>
+        <form id="productForm">
+            <input type="text" id="productName" placeholder="Product Name" required>
+            <input type="number" id="productPrice" placeholder="Product Price" required>
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Select Product for Cart</h2>
+        <form id="cartForm">
+            <label for="userSelect">Select User:</label>
+            <select id="userSelect"></select>
+            <label for="productSelect">Select Product:</label>
+            <select id="productSelect"></select>
+            <button type="submit">Add to Cart</button>
+        </form>
+    </div>
+
+    <script src="/public/script.js"></script>
+</body>
+</html>
